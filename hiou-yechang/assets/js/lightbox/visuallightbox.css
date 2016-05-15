@@ -1,0 +1,71 @@
+#overlay { position:fixed; top: 0; left: 0;right:0;bottom:0; z-index: 190; width: 100%; height: auto; background-color: #000; }
+#lightbox { position: absolute; top: 20px; left: 0; width: 100%; z-index: 200; text-align: center; color: #151410; line-height: 0; padding-top: 20px; }
+#lightbox a, #lightbox a:hover { border-bottom: none; color: #151410; text-decoration: underline; }
+#lightbox a img { border: none; }
+#outerImageContainer { width: auto; height: auto; /* without this line error in IE8 detected */ margin: 0 auto; position: relative; }
+#lightboxImage { width: 100%; height: 100%; }
+#imageContainerMain { margin: 0 auto; overflow: visible; position: relative; font-size: 0;/* ie fix - big info bar*/ }
+#imageContainer { width: 150px; height: 30px; margin: 0 auto; overflow: hidden; background-color: #fff; position: relative; font-size: 0;/* ie fix - big info bar*/ }
+#loading { position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; font-size: 10px; z-index: 1; }
+#loadingLink { display: block; margin: 0 auto; padding: 0; width: 150px; height: 29px; background: url(loading.gif) center center no-repeat; text-indent: -9999px; }
+#hoverNav { position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav { left: 0; }
+#prevLinkImg { top: 45%; height: 50px; width: 50px; position: absolute; z-index: 20; outline-style: none; display: block; text-indent: -9999px; background-position: 0 0; }
+#nextLinkImg { top: 45%; height: 50px; width: 50px; position: absolute; z-index: 20; outline-style: none; display: block; text-indent: -9999px; background-position: 100% 0; }
+* html #prevLinkImg, * html #nextLinkImg { background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ }
+#prevLinkImg { left: 3px; }
+#nextLinkImg { right: 3px; }
+#prevLinkImg:hover, #prevLinkImg.hover, #prevLinkImg:visited:hover { background-position: 0 100%; }
+#nextLinkImg:hover, #nextLinkImg.hover, #nextLinkImg:visited:hover { background-position: 100% 100%; }
+#imageContainerMain:hover #prevLinkImg, #imageContainerMain:hover #nextLinkImg { background-image: url(arrows.png); }
+* html #prevLinkImg { background-image: url(arrows.png); }
+* html #nextLinkImg { background-image: url(arrows.png); }
+#imageDataContainer { width: auto; position: absolute; z-index: 21; bottom: 20px; left: 10px; }
+#imageData {font-size: 20px; font-weight: bold; line-height: 20px; color: #4589ce; background-color: #ffffff; border-radius: 0px 6px 6px 0px; margin-right: 15px; overflow: visible; position: relative; z-index: 21; text-align: center; opacity: 0.8;  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+}
+#imageDetails { width: 100%; padding: 0; }
+#caption { display: block; text-align: left; padding: 12px; }
+#numberDisplay { display: none; text-align: right; }
+#detailsNav { display: none; }
+#prevLinkDetails, #nextLinkDetails, #slideShowControl { display: none; }
+#close { position: relative; width: 100%; height: 0; z-index: 21; }
+#closeLink { position: absolute; top: -20px; right: -15px; display: block; outline-style: none; margin: 0; padding: 0; text-decoration: none; width: 40px; height: 40px; background: url(close.png) no-repeat; _background-image: none;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/close.png', sizingMethod='scale');
+}
+#closeLink:hover { background: url(close_hover.png) no-repeat; _background-image: none;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_hover.png', sizingMethod='scale');
+}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html>body .clearfix { display: inline-block; width: 100%; }
+* html .clearfix { /* Hides from IE-mac \*/
+height: 1%;/* End hide from IE-mac */
+}
+#outerImageFrame { border: 5px solid red; height: 100%; width: 100%; position: absolute; }
+#outerImageContainer { overflow: visible; }
+#outerImageContainer td { text-align: center; padding: 0; }
+#lightboxFrameBody { background-color: transparent; }
+.vlb { display: none; }
+#outerImageContainer td, #outerImageContainer tr { font-size: 0; border: 0 none; }
+#outerImageContainer td.tl, #outerImageContainer td.br { height: 10px; width: 10px; }
+#outerImageContainer td.tc { background-image: url(borderHoriz.png); _background-image: none;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderHoriz.png', sizingMethod='scale');
+}
+#outerImageContainer td.ml { background-image: url(borderVert.png); _background-image: none;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderVert.png', sizingMethod='scale');
+}
+#outerImageContainer td.mr { background-image: url(borderVert.png); _background-image: none;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderVert.png', sizingMethod='scale');
+}
+#outerImageContainer td.bc { background-image: url(borderHoriz.png); _background-image: none;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderHoriz.png', sizingMethod='scale');
+}
+#outerImageContainer td.tl { background: url(borderCorners.png) 0 0; _background-image: none;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderCorners.png', sizingMethod='scale');
+}
+#outerImageContainer td.tr { background: url(borderCorners.png) 100% 0; _background-image: none;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderCorners.png', sizingMethod='scale');
+}
+#outerImageContainer td.bl { background: url(borderCorners.png) 0 100%; _background-image: none;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderCorners.png', sizingMethod='scale');
+}
+#outerImageContainer td.br { background: url(borderCorners.png) 100% 100%; _background-image: none;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderCorners.png', sizingMethod='scale');
+}
+
+/*
+#outerImageContainer td.bc{
+	background-image:url($rel#shadow.png$) left 0%;
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$shadow.png$', sizingMethod='scale');
+}
+*/
