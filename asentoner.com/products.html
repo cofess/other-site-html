@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<title>产品中心</title>
+<link rel="stylesheet" href="pintuer.css">
+<link rel="stylesheet" href="style.css">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- header -->
+<div class="header">
+  <div class="container">
+    <div class="line-big">
+      <div class="x2 fadein-left"> <a href="#" class="logo float-left margin-big-right"><img src="images/logo.png" height="100" class="ring-hover padding-small-top"></a> </div>
+      <!-- navbar -->
+      <div class="x10">
+        <div class="line">
+          <ul class="list-unstyle list-inline navbar-right padding-top padding-big-bottom">
+            <li> <a href="#"> <i class="icon-weibo"></i> </a> </li>
+            <li> <a href="#"> <i class="icon-tencent-weibo"></i> </a> </li>
+            <li> <a href="#"> <i class="icon-envelope"></i> </a> </li>
+            <li> <a href="#"> <i class="icon-skype"></i> </a> </li>
+            <li class="color-orange-900 margin-big-right"><i class="icon-phone-square"></i><span> 0756-3801552</span></li>
+            <li><a href="#">简体中文</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </div>
+        <ul class="nav nav-inline nav-menu navbar-right nav-big nav-navicon clearfix" id="naver">
+          <li><a href="index.html">网站首页</a></li>
+          <li><a href="about.html">关于我们<span class="arrow"></span></a>
+            <ul class="drop-menu">
+              <li><a href="#">公司简介</a></li>
+              <li><a href="#">文化理念</a></li>
+              <li><a href="imgs.html">企业相册</a></li>
+              <li><a href="#">客户评价</a></li>
+              <li><a href="#">人才招聘</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="products.html">产品系列<span class="arrow"></span></a>
+            <ul class="drop-menu">
+            <li><a href="products.html" title="HP">HP</a></li>
+            <li><a href="products.html" title="CANON">CANON</a></li>
+            <li><a href="products.html" title="SAMSUNG">SAMSUNG</a></li>
+            <li><a href="products.html" title="XEROX">XEROX</a></li>
+            <li><a href="products.html" title="BROTHER">BROTHER</a></li>
+            <li><a href="products.html" title="DELL">DELL</a></li>
+            <li><a href="products.html" title="LEXMARK">LEXMARK</a></li>
+            <li><a href="products.html" title="KYOCERA">KYOCERA</a></li>
+            <li><a href="products.html" title="OKI">OKI</a></li>
+            <li><a href="products.html" title="EPSON">EPSON</a></li>
+            <li><a href="products.html" title="KONICA MONOLTA">KONICA MONOLTA</a></li>
+            <li><a href="products.html" title="PANASONIC">PANASONIC</a></li>
+            <li><a href="products.html" title="SHARP">SHARP</a></li>
+            <li><a href="products.html" title="TOSHIBA">TOSHIBA</a></li>
+            <li><a href="products.html" title="RICOH">RICOH</a></li>
+            <li><a href="products.html" title="LENOVO">LENOVO</a></li>
+          </ul>
+          </li>
+          <li><a href="news.html">新闻资讯<span class="arrow"></span></a>
+            <ul class="drop-menu">
+              <li><a href="#">公告通知</a></li>
+              <li><a href="#">公司动态</a></li>
+              <li><a href="#">行业动态</a></li>
+              <li><a href="#">产品资讯</a></li>
+            </ul>
+          </li>
+          <li><a href="#">服务支持<span class="arrow"></span></a>
+            <ul class="drop-menu">
+              <li><a href="#">解决方案</a></li>
+              <li><a href="#">常见问题</a></li>
+              <li><a href="#">资料下载</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">联系我们</a></li>
+          <li><a href="#"><span class="icon-edit"></span> 在线反馈</a>
+            <ul class="drop-menu feedback">
+              <li>
+                <div class="padding-big bg-white clearfix">
+                  <form enctype="multipart/form-data" method="POST" name="myform" onsubmit="return Checkfeedback();" action="feedback/index.php?action=add&amp;lang=cn" target="_self">
+                    <table class="feedback_table">
+                      <tbody>
+                        <tr>
+                          <td class="text">反馈主题</td>
+                          <td class="input"><select name="para63">
+                              <option selected="selected" value="">请选择</option>
+                              <option value="索取资料">索取资料</option>
+                              <option value="产品购买">产品购买</option>
+                              <option value="商务合作">商务合作</option>
+                              <option value="其他反馈">其他反馈</option>
+                            </select>
+                            <span class="info">*</span><span></span></td>
+                        </tr>
+                        <tr>
+                          <td class="text">姓名</td>
+                          <td class="input"><input name="para64" type="text" size="30" class="input-text">
+                            <span class="info">*</span><span></span></td>
+                        </tr>
+                        <tr>
+                          <td class="text">联系电话</td>
+                          <td class="input"><input name="para65" type="text" size="30" class="input-text">
+                            <span class="info"></span><span></span></td>
+                        </tr>
+                        <tr>
+                          <td class="text">Email</td>
+                          <td class="input"><input name="para66" type="text" size="30" class="input-text">
+                            <span class="info">*</span><span></span></td>
+                        </tr>
+                        <tr>
+                          <td class="text">单位名称</td>
+                          <td class="input"><input name="para67" type="text" size="30" class="input-text">
+                            <span class="info"></span><span></span></td>
+                        </tr>
+                        <tr>
+                          <td class="text">信息描述</td>
+                          <td class="input"><textarea name="para68" class="textarea-text" cols="50" rows="5"></textarea>
+                            <span class="info">*</span><span></span></td>
+                        </tr>
+                        <tr>
+                          <td class="text"></td>
+                          <td class="submint"><input type="hidden" name="fdtitle" value="在线反馈">
+                            <input type="hidden" name="lang" value="cn">
+                            <input type="hidden" name="ip" value="Unknown">
+                            <input type="hidden" name="totnum" value="6">
+                            <input type="hidden" name="id" value="35">
+                            <input type="hidden" name="fid_url" value="1">
+                            <input type="submit" name="Submit" value="提交信息" class="submit button orange btn btn-danger"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar end --> 
+    </div>
+  </div>
+</div>
+<!-- header end --> 
+<!-- main -->
+<div class="main page-product"> 
+  <!-- page-head -->
+  <div class="page-head">
+    <div class="container">
+      <div class="line-big">
+        <div class="x7 padding-big-top">
+          <h1 class="fadein-top margin-large-top padding-large-top">产品中心</h1>
+          <div class="fadein-bottom">
+            <ul class="bread no-padding">
+              <li><a href="#" title="网站首页" class="icon-home"> 网站首页</a></li>
+              <li><a href="#">产品中心</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="x5"><img src="images/public/f3.png" height="250" class="fadein-bottom float-right"></div>
+      </div>
+    </div>
+  </div>
+  <!-- page-head end --> 
+<!-- section-brand -->
+<div class="section-brand border-top border-bottom">
+  <div class="container">
+    <div class="banner no-pointer arrow-nobg" data-pointer="1" data-interval="6" data-item="2" data-small="3" data-middle="4" data-big="8" data-style="border-red">
+      <ul class="carousel">
+        <li class="item"><a href="#"><img src="images/brand/1.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/2.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/3.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/4.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/5.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/6.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/7.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/8.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/9.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/10.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/11.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/12.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/13.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/14.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/15.gif"></a></li>
+        <li class="item"><a href="#"><img src="images/brand/16.gif"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- section-brand end -->  
+  <!-- page-content -->
+  <div class="layout margin-large-bottom page-content">
+    <div class="container">
+      <div class="line">  
+        <!-- x12 -->
+        <div class="x12 margin-large-bottom">  
+          <!-- panel -->
+          <div class="panel radius-none bg-white mt-n-xxs">
+            <div class="panel-body no-padding mr-n-xxs mb-n-xxs clearfix">
+              <ul class="carousel">
+                <li class="item border-right x3"> <img src="images/1.jpg">
+                  <div class="meta-box bg border-top border-bottom padding">
+                    <h3 class="text-nowrap text-normal"><a href="#">惠普CC388A易加粉硒鼓</a></h3>
+                    <p class="text-gray margin-bottom">适用机型： HP LaserJet P1007/1008 M1136..... </p>
+                    <p><a href="support/" class="text-yellow">了解详情>></a></p>
+                  </div>
+                </li>
+                <li class="item border-right x3"> <img src="images/2.jpg">
+                  <div class="meta-box bg border-top border-bottom padding">
+                    <h3 class="text-nowrap text-normal"><a href="#">惠普CC388A易加粉硒鼓</a></h3>
+                    <p class="text-gray margin-bottom">适用机型： HP LaserJet P1007/1008 M1136..... </p>
+                    <p><a href="support/" class="text-yellow">了解详情>></a></p>
+                  </div>
+                </li>
+                <li class="item border-right x3"> <img src="images/1.jpg">
+                  <div class="meta-box bg border-top border-bottom padding">
+                    <h3 class="text-nowrap text-normal"><a href="#">惠普CC388A易加粉硒鼓</a></h3>
+                    <p class="text-gray margin-bottom">适用机型： HP LaserJet P1007/1008 M1136..... </p>
+                    <p><a href="support/" class="text-yellow">了解详情>></a></p>
+                  </div>
+                </li>
+                <li class="item border-right x3"> <img src="images/2.jpg">
+                  <div class="meta-box bg border-top border-bottom padding">
+                    <h3 class="text-nowrap text-normal"><a href="#">惠普CC388A易加粉硒鼓</a></h3>
+                    <p class="text-gray margin-bottom">适用机型： HP LaserJet P1007/1008 M1136..... </p>
+                    <p><a href="support/" class="text-yellow">了解详情>></a></p>
+                  </div>
+                </li>
+                <li class="item border-right x3"> <img src="images/1.jpg">
+                  <div class="meta-box bg border-top border-bottom padding">
+                    <h3 class="text-nowrap text-normal"><a href="#">惠普CC388A易加粉硒鼓</a></h3>
+                    <p class="text-gray margin-bottom">适用机型： HP LaserJet P1007/1008 M1136..... </p>
+                    <p><a href="support/" class="text-yellow">了解详情>></a></p>
+                  </div>
+                </li>
+                <li class="item border-right x3"> <img src="images/2.jpg">
+                  <div class="meta-box bg border-top border-bottom padding">
+                    <h3 class="text-nowrap text-normal"><a href="#">惠普CC388A易加粉硒鼓</a></h3>
+                    <p class="text-gray margin-bottom">适用机型： HP LaserJet P1007/1008 M1136..... </p>
+                    <p><a href="support/" class="text-yellow">了解详情>></a></p>
+                  </div>
+                </li>
+                <li class="item border-right x3"> <img src="images/1.jpg">
+                  <div class="meta-box bg border-top border-bottom padding">
+                    <h3 class="text-nowrap text-normal"><a href="#">惠普CC388A易加粉硒鼓</a></h3>
+                    <p class="text-gray margin-bottom">适用机型： HP LaserJet P1007/1008 M1136..... </p>
+                    <p><a href="support/" class="text-yellow">了解详情>></a></p>
+                  </div>
+                </li>
+                <li class="item border-right x3"> <img src="images/2.jpg">
+                  <div class="meta-box bg border-top border-bottom padding">
+                    <h3 class="text-nowrap text-normal"><a href="#">惠普CC388A易加粉硒鼓</a></h3>
+                    <p class="text-gray margin-bottom">适用机型： HP LaserJet P1007/1008 M1136..... </p>
+                    <p><a href="support/" class="text-yellow">了解详情>></a></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- panel end --> 
+          <div class="margin-large-top text-center">
+              <ul class="pagination pagination-group border-yellow pagination-big">
+                <li class="disabled"><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+        </div>
+        <!-- x12 end --> 
+      </div>
+    </div>
+  </div>
+  <!-- page-content end --> 
+  <!-- section-promotion -->
+  <div class="layout section-promotion clearfix">
+    <div class="container">
+      <div class="line">
+        <div class="x7 x5-move">
+          <h1 class="fadein-top text-right text-md mt-xxl">您身边的办公耗材专家，值得信赖！</h1>
+          <p class="fadein-bottom text-right text-uppercase">Your side of the office supplies experts, trustworthy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section-promotion end --> 
+</div>
+<!-- main end --> 
+<!-- footer -->
+<div class="footer">
+  <div class="layout bg-grey-900">
+    <div class="container">
+      <div class="line-big">
+        <div class="x3 padding-large-top padding-large-bottom margin-big-top">
+          <h3 class="margin-bottom"><span class="text-white">联系我们</span></h3>
+          <ul class="list-unstyle height-big text-gray">
+            <li><span class="icon-angle-right"></span> 地址：广东省珠海市香洲区人民东路125号</li>
+            <li><span class="icon-angle-right"></span> 电话：0756-3801552</li>
+            <li><span class="icon-angle-right"></span> 传真：0756-3801550</li>
+            <li><span class="icon-angle-right"></span> E-mail：sales@asentoner.com</li>
+          </ul>
+        </div>
+        <div class="x6 padding-large-top padding-large-bottom margin-big-top">
+          <h3 class="margin-bottom"><span class="text-white">专利免责申明</span></h3>
+          <p class="text-gray">公司产品所涉及各品牌，仅供说明参考用途，他们属于各自持有人，我们并未授权持有该品牌.</p>
+          <h3 class="margin-bottom margin-large-top"><span class="text-white">友情链接</span></h3>
+          <ul class="list-unstyle list-inline text-gray height-big">
+            <li><a href="http://www.astaopc.com/">爱斯达办公耗材</a></li>
+            <li><a href="http://www.acolor.hk/">本色办公耗材</a></li>
+            <li><a href="http://bense.tmall.com/">本色天猫旗舰店</a></li>
+            <li><a href="#">业界资讯</a></li>
+            <li><a href="#">大事件</a></li>
+            <li><a href="#">产品资讯</a></li>
+            <li><a href="#">公司动态</a></li>
+            <li><a href="#">业界资讯</a></li>
+          </ul>
+        </div>
+        <div class="x3 sns mt-n-xl bg-orange-900 padding-top padding-big-bottom text-center">
+          <ul class="list-unstyle list-inline">
+            <li> <a href="http://t.qq.com/astatoner" target="_blank" title="关注新浪微博">
+              <div class="icon-weibo text-big txt no-bg border border-white text-white radius-circle"></div>
+              </a> </li>
+            <li> <a href="http://t.qq.com/astatoner" target="_blank" title="关注腾讯微博">
+              <div class="icon-tencent-weibo text-big txt no-bg border border-white text-white radius-circle"></div>
+              </a> </li>
+            <li> <a href="mailto:donna@acolor.hk" target="_blank" title="企业邮箱:donna@acolor.hk">
+              <div class="icon-envelope text-big txt no-bg border border-white text-white radius-circle"></div>
+              </a> </li>
+            <li> <a href="callto:donna_acolor" target="_blank" title="Skype:donna_acolor">
+              <div class="icon-skype text-big txt no-bg border border-white text-white radius-circle"></div>
+              </a> </li>
+          </ul>
+          <div class="qrcode">
+            <div class="padding-large-top padding-bottom"><img src="images/qrcode_wap.png" height="230"></div>
+            <p class="text-white">扫一扫 有惊喜！</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="layout bg-black padding-big-top padding-big-bottom bottom text-gray">
+    <div class="container">
+      <div class="line-big height-large">
+        <div class="x7">Copyright&copy;2013 <a href="#">珠海爱斯盛办公耗材有限公司</a> All Rights Reserved.</div>
+        <div class="x5">
+          <ul class="list-unstyle float-right list-inline">
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">服务与支持</a></li>
+            <li><a href="#">网站地图</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="button win-backtop bg-yellow fadein-bottom" id="backto-top"><span class="icon-angle-double-up text-big"></span></button>
+<!-- footer end --> 
+<script src="pintuer.js"></script> 
+<script src="app.js"></script> 
+<!--slider all in one-->
+<link rel="stylesheet" href="js/allinone/allinone_bannerRotator.css">
+<script src="js/allinone/jquery-ui-1.10.2.min.js"></script> 
+<script src="js/allinone/allinone_bannerRotator.js"></script> 
+<script>
+$(function() {
+	$('#allinone_bannerRotator_universal').allinone_bannerRotator({
+		skin: 'universal',
+		width: 1920,
+		height: 600,
+		width100Proc:true,
+		responsive:true,
+		thumbsWrapperMarginBottom:-35,
+		autoHideBottomNav:false,
+		showPreviewThumbs:false,
+		showCircleTimer:false,
+		defaultEffect: 'random'
+	});
+});
+</script>
+</body>
+</html>

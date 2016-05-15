@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<title>新闻详情页</title>
+<link rel="stylesheet" href="pintuer.css">
+<link rel="stylesheet" href="style.css">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--顶部-->
+<div class="header">
+  <div class="container toper">
+    <div class="xs5 xm3 xb3 fadein-left">
+      <button class="button icon-navicon float-right no-border radius-none no-bg text-main" data-target="#naver"></button>
+      <a href="index.html" class="logo"><img src="images/logo.png" width="120" height="60" class="ring-hover padding-small-top"/></a> 
+      </div>
+    <div class="xs4 xm4 xb4">
+      <form>
+        <div class="input-group padding-top">
+          <input type="text" class="input border-main radius-none" name="keywords" size="30" placeholder="关键词" />
+          <span class="addbtn">
+          <button type="button" class="button bg-main radius-none icon-search"></button>
+          </span> </div>
+      </form>
+    </div>
+    <div class="hidden-l xs4 xm3 xb3 head-right">服务热线：<span class="text-red">0755-25877433</span></div>
+    <div class="xs3 xm2 xb2 head-right languages">
+    <div class="button-group"><a class="button button-little bg-main" href="#">简体中文</a> <a class="button button-little border-main" href="#">ENGLISH</a> <a class="button button-little border-main" href="#">Wap</a>
+    </div>
+    </div>
+  </div>
+  <!--导航-->
+  <div class="layout bg-naver bg-inverse bg-main fixed">
+    <div class="container">
+      <ul class="nav nav-inline nav-menu nav-justified nav-big clearfix nav-navicon" id="naver">
+        <li><a href="index.html">网站首页</a></li>
+        <li><a href="about.html">关于本色<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">文化理念</a></li>
+            <li><a href="#">资质荣誉</a></li>
+            <li><a href="imgs.html">企业相册</a></li>
+            <li><a href="#">核心竞争力</a></li>
+          </ul>
+        </li>
+        <li><a href="products.html">产品系列<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="products.html" title="HP">HP<span class="arrow"></span></a>
+            	<ul><li><a href="#">彩色</a></li><li><a href="#">黑白</a></li></ul>
+            </li>
+            <li><a href="products.html" title="CANON">CANON</a></li>
+            <li><a href="products.html" title="SAMSUNG">SAMSUNG</a></li>
+            <li><a href="products.html" title="XEROX">XEROX</a></li>
+            <li><a href="products.html" title="BROTHER">BROTHER</a></li>
+            <li><a href="products.html" title="DELL">DELL</a></li>
+            <li><a href="products.html" title="LEXMARK">LEXMARK</a></li>
+            <li><a href="products.html" title="KYOCERA">KYOCERA</a></li>
+            <li><a href="products.html" title="OKI">OKI</a></li>
+            <li><a href="products.html" title="EPSON">EPSON</a></li>
+            <li><a href="products.html" title="KONICA MONOLTA">KONICA MONOLTA</a></li>
+            <li><a href="products.html" title="PANASONIC">PANASONIC</a></li>
+            <li><a href="products.html" title="SHARP">SHARP</a></li>
+            <li><a href="products.html" title="TOSHIBA">TOSHIBA</a></li>
+            <li><a href="products.html" title="RICOH">RICOH</a></li>
+            <li><a href="products.html" title="LENOVO">LENOVO</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="news.html">新闻资讯<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="#">大事件</a></li>
+            <li><a href="#">公司动态</a></li>
+            <li><a href="#">行业动态</a></li>
+            <li><a href="#">产品资讯</a></li>
+          </ul>
+        </li>
+        <li><a href="#">服务支持<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="#">解决方案</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">资料下载</a></li>
+          </ul>
+        </li>
+        <li><a href="job.html">人才招聘<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="#">人才理念</a></li>
+            <li><a href="#">薪酬福利</a></li>
+            <li><a href="#">员工风貌</a></li>
+            <li><a href="#">招聘职位</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">联系我们</a></li>
+        <li><a href="#">更多<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="http://bense.tmall.com/" target="_blank">本色天猫</a></li>
+            <li><a href="http://acolor.en.alibaba.com/" target="_blank">阿里巴巴</a></li>
+          </ul>
+        </li>
+        <li class="bg-black swing-hover navbar-right hidden-s"><a href="#" class="bg-green"><span class="icon-edit"></span>  反馈</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--内容-->
+<div class="main">
+  <div class="bg doc-intro border-top border-bottom">
+    <div class="container">
+      <h1 class="fadein-top">再生打印耗材市场中拉美最具发展潜力</h1>
+      <p class="fadein-bottom">
+      <ul class="bread">
+        <li><a href="#" class="icon-home"> 首页</a></li>
+        <li><a href="#">资讯</a></li>
+        <li><a href="#">正文</a></li>
+      </ul>
+      </p>
+    </div>
+  </div>
+      <nav class="nav-growpop side-fixnav"> <a class="prev" href="#" data-sb="fadeInLeft" data-sb-hide="fadeOutLeft"> <span class="icon-wrap"><i class="icon-chevron-left"></i></span>
+      <div> <span>Previous Story</span>
+        <h3>Child full of grace saviour of the human race</h3>
+        <p>by Holly Brighton</p>
+        </div>
+      </a> <a class="next" href="#" data-sb="fadeInRight" data-sb-hide="fadeOutRight"> <span class="icon-wrap"><i class="icon-chevron-right"></i></span>
+      <div> <span>Next Story</span>
+        <h3>Ancient rulage of grains and the trees of the night</h3>
+        <p>by Mark Ustinov</p>
+        </div>
+      </a> </nav>
+  <div class="container">
+    <div class="line-big">
+      <div class="main-wrap">
+        <div class="hidden-l xs4 xm4 xb3 fixed-wrap"></div>
+        <div class="hidden-l xs4 xm4 xb3">
+          <div class="line-big">
+            <div class="widget">
+              <h2 class="padding"><span class="icon-fire"></span> 热门资讯</h2>
+              <div class="padding-big">
+                <ul class="list-media list-underline">
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-main text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-green text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-main text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-green text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-main text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-green text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-main text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                </ul>
+                <a class="button button-block border-main text-center" href="#">了解更多资讯 <span class="icon-angle-double-right"></span></a> </div>
+            </div>
+            <div class="widget">
+              <h2 class="padding"><span class="icon-question-circle"></span> 常见问题</h2>
+              <div class="padding-big">
+                <ul class="list-media list-underline">
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-main text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-green text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-main text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-green text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-main text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-green text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media media-x">
+                      <div class="media-body"><a href="news-details.html"><span class="icon-circle text-main text-small"></span> 常见的Epson针式打印机的微调整方法</a></div>
+                    </div>
+                  </li>
+                </ul>
+                <a class="button button-block border-main text-center" href="#">了解更多耗材常识 <span class="icon-angle-double-right"></span></a> </div>
+            </div>
+            <br>
+          </div>
+        </div>
+        <div class="xl12 xs8 xm8 xb9">
+          <div class="doc-content">
+            <div class="editor">
+              <h1>再生打印耗材市场中拉美最具发展潜力</h1>
+              <blockquote class="margin-top margin-bottom radius-none">
+                <div class="info">日期：2014-12-15 9:12:33　人气：<span id="hits">652</span></div>
+                <div class="bdsharebuttonbox range-scroll-right"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                <div class="button-group margin-small-top"><button class="button win-refresh icon-refresh"> 刷新</button>
+<button class="button win-print icon-print"> 打印</button>
+</div>
+              </blockquote>
+              <div><p>&nbsp;
+	</p>
+<div>
+	&nbsp; &nbsp;打印耗材是指打印机（复印机）使用过程中所必要的消耗性产品。打印耗材可分原装打印耗材、再生打印耗材和通用打印耗材。原装耗材是指打印机生产厂家生产的专用耗材；再生耗材是指对回收的旧耗材进行修复后再使用的耗材；通用耗材又称兼容耗材，是指非原装厂商生产的可在原装厂家生产的打印机上兼容使用并具有自主专利的耗材产品。</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp; &nbsp; 二十世纪九十年代，欧美一些企业通过掌握打印机（复印机）关键零部件修复、表面处理、芯片解密等技术，生产出可在各类品牌打印机（复印机）上都能使用的耗材产品，这些耗材不但能兼容使用，且各项性能参数已达到原装产品水平。近十年来，国内某些企业同样掌握了这种技术，耗材种类齐全，产品主要进入欧美市场，知名厂家有珠海纳思达、天威飞马、大手印等，珠海纳思达公司2012年打印机耗材销售额超过15亿元人民币。</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp; &nbsp; 通用打印耗材产业的可行性</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp; &nbsp; 一是市场需求巨大。据IDC报道，2010年全球计算机外围设备市场（包括打印机、复印机及耗材）约1490亿美元，合人民币约1万亿元。在我国，2010年仅打印机耗材产值超过200亿人民币，随着经济社会的发展，打印耗材的市场需求量一定会越来越大。另据统计，目前国内市场原装、假冒、通用耗材市场份额比例为5：4：1。假冒耗材因质量、知识产权保护、损害身体健康等因素，将逐步退出市场，而通用耗材以质量、价格优势将占据越来起多的市场份额，有可能达到甚至超过原装耗材的市场份额。</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp; &nbsp; 二是符合国家产业政策。打印耗材在工信部产业目录中列为电子信息产品中的计算机外围设备制造，属国家重点支持的高新技术领域。通过回收废旧硒鼓等，生产再生耗材，更是符合国家发展循环经济产业政策。该产业属于新型劳动密集型产业，一方面具有很高的技术含量，另一方面需要大量产业工人。</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp; &nbsp; 三是通用打印耗材具有价格优势，投资收益率较高。相对原装耗材来讲，通用耗材具有明显的价格优势，在质量、环保等相当的情况下，用户一定更愿意使用通用耗材。</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp; &nbsp; 此外，随着3D打印技术的兴起，为打印耗材提供了市场。虽然3D打印技术在国内广泛应用尚需时日，但无疑一个全新的打印耗材市场就在面前。</div>
+<div id="metinfo_additional"></div></div>
+              <ul class="pager clearfix margin-big-top">
+  <li class="float-left"><a href="#">上一篇</a></li>
+  <li class="float-right"><a href="#">下一篇</a></li>
+</ul>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--底部-->
+<div class="footer">
+  <div class="layout padding-big-top padding-bottom border-top bg">
+    <div class="container padding">
+      <div class="line">
+        <div class="hidden-l xs9 table-responsive">
+          <ul class="nav nav-sitemap">
+            <li><a href="#">深圳市本色办公耗材有限公司</a>
+              <p> 深圳市本色办公耗材有限公司是一家充满激情、勇于求索、稳步发展，<br/>
+                集打印机耗材研发、生产、销售为一体的高新技术产业公司。<br/>
+                拥有数十名行业经验在7、8年以上的高素质、高水准的工程师与生产技师，<br/>
+                以及拥有一支经验丰富的营销团队。</p>
+              <div class="media media-x">
+                <div class="float-left txt-border radius-circle border-main">
+                  <div class="txt radius-circle bg-main icon-phone text-large"></div>
+                </div>
+                <div class="media-body"><strong class="text-big text-main">0755-25877433</strong>7*24小时客服电话</div>
+              </div>
+            </li>
+            <li class="hidden-l hidden-s"><a href="#">新闻资讯</a>
+              <ul>
+                <li><a href="#"><span class="icon-angle-right"></span> 大事件</a></li>
+                <li><a href="#"><span class="icon-angle-right"></span> 产品资讯</a></li>
+                <li><a href="#"><span class="icon-angle-right"></span> 公司动态</a></li>
+                <li><a href="#"><span class="icon-angle-right"></span> 业界资讯</a></li>
+              </ul>
+            </li>
+            <li class="hidden-l hidden-s"><a href="#">技术支持</a>
+              <ul>
+                <li><a href="#"><span class="icon-angle-right"></span> 解决方案</a></li>
+                <li><a href="#"><span class="icon-angle-right"></span> 常见问题</a></li>
+                <li><a href="#"><span class="icon-angle-right"></span> 资料下载</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="xl12 xs3 padding-top text-center">
+          <div class="weixin text-center"> <img src="images/qrcode_weixin.jpg" width="130">
+            <p class="text-gray text-small">关注“本色办公耗材”</p>
+          </div>
+          <ul class="list-unstyle list-inline">
+            <li> <a href="http://t.qq.com/astatoner" target="_blank" title="关注新浪微博">
+              <div class="txt txt-small radius-circle bg-red icon-weibo"></div>
+              </a> </li>
+            <li> <a href="http://t.qq.com/astatoner" target="_blank" title="关注腾讯微博">
+              <div class="txt txt-small radius-circle bg-blue icon-tencent-weibo"></div>
+              </a> </li>
+            <li> <a href="mailto:donna@acolor.hk" target="_blank" title="企业邮箱:donna@acolor.hk">
+              <div class="txt txt-small radius-circle bg-main icon-envelope"></div>
+              </a> </li>
+            <li> <a href="callto:donna_acolor" target="_blank" title="Skype:donna_acolor">
+              <div class="txt txt-small radius-circle bg-yellow icon-skype"></div>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="layout bg-black bg-inverse">
+    <div class="container">
+      <div class="navbar line-big">
+        <div class="navbar-text navbar-left">版权所有 &copy; <a href="index.html">深圳市本色办公耗材有限公司</a> All Rights Reserved</div>
+        <div class="navbar-body nav-navicon" id="navbar-footer">
+          <ul class="nav nav-inline navbar-right hidden-s hidden-l">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于本色</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">站点地图</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="button win-backtop bg-main fadein-bottom" id="backto-top"><span class="icon-angle-double-up text-big"></span></button>
+<!--/footer-->
+<script src="pintuer.js"></script> 
+<script src="app.js"></script>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</body>
+</html>

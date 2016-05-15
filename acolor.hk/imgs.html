@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<title>企业相册</title>
+<link rel="stylesheet" href="pintuer.css">
+<link rel="stylesheet" href="style.css">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--顶部-->
+<div class="header">
+  <div class="container toper">
+    <div class="xs5 xm3 xb3 fadein-left">
+      <button class="button icon-navicon float-right no-border radius-none no-bg text-main" data-target="#naver"></button>
+      <a href="index.html" class="logo"><img src="images/logo.png" width="120" height="60" class="ring-hover padding-small-top"/></a> </div>
+    <div class="xs4 xm4 xb4">
+      <form>
+        <div class="input-group padding-top">
+          <input type="text" class="input border-main radius-none" name="keywords" size="30" placeholder="关键词" />
+          <span class="addbtn">
+          <button type="button" class="button bg-main radius-none icon-search"></button>
+          </span> </div>
+      </form>
+    </div>
+    <div class="hidden-l xs4 xm3 xb3 head-right">服务热线：<span class="text-red">0755-25877433</span></div>
+    <div class="xs3 xm2 xb2 head-right languages">
+      <div class="button-group"><a class="button button-little bg-main" href="#">简体中文</a> <a class="button button-little border-main" href="#">ENGLISH</a> <a class="button button-little border-main" href="#">Wap</a> </div>
+    </div>
+  </div>
+  <!--导航-->
+  <div class="layout bg-naver bg-inverse bg-main fixed">
+    <div class="container">
+      <ul class="nav nav-inline nav-menu nav-justified nav-big clearfix nav-navicon" id="naver">
+        <li><a href="index.html">网站首页</a></li>
+        <li class="active"><a href="about.html">关于本色<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">文化理念</a></li>
+            <li><a href="#">资质荣誉</a></li>
+            <li><a href="imgs.html">企业相册</a></li>
+            <li><a href="#">核心竞争力</a></li>
+          </ul>
+        </li>
+        <li><a href="products.html">产品系列<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="products.html" title="HP">HP<span class="arrow"></span></a>
+            	<ul><li><a href="#">彩色</a></li><li><a href="#">黑白</a></li></ul>
+            </li>
+            <li><a href="products.html" title="CANON">CANON</a></li>
+            <li><a href="products.html" title="SAMSUNG">SAMSUNG</a></li>
+            <li><a href="products.html" title="XEROX">XEROX</a></li>
+            <li><a href="products.html" title="BROTHER">BROTHER</a></li>
+            <li><a href="products.html" title="DELL">DELL</a></li>
+            <li><a href="products.html" title="LEXMARK">LEXMARK</a></li>
+            <li><a href="products.html" title="KYOCERA">KYOCERA</a></li>
+            <li><a href="products.html" title="OKI">OKI</a></li>
+            <li><a href="products.html" title="EPSON">EPSON</a></li>
+            <li><a href="products.html" title="KONICA MONOLTA">KONICA MONOLTA</a></li>
+            <li><a href="products.html" title="PANASONIC">PANASONIC</a></li>
+            <li><a href="products.html" title="SHARP">SHARP</a></li>
+            <li><a href="products.html" title="TOSHIBA">TOSHIBA</a></li>
+            <li><a href="products.html" title="RICOH">RICOH</a></li>
+            <li><a href="products.html" title="LENOVO">LENOVO</a></li>
+          </ul>
+        </li>
+        <li><a href="news.html">新闻资讯<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="#">大事件</a></li>
+            <li><a href="#">公司动态</a></li>
+            <li><a href="#">行业动态</a></li>
+            <li><a href="#">产品资讯</a></li>
+          </ul>
+        </li>
+        <li><a href="#">服务支持<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="#">解决方案</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">资料下载</a></li>
+          </ul>
+        </li>
+        <li><a href="job.html">人才招聘<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="#">人才理念</a></li>
+            <li><a href="#">薪酬福利</a></li>
+            <li><a href="#">员工风貌</a></li>
+            <li><a href="#">招聘职位</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">联系我们</a></li>
+        <li><a href="#">更多<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="http://bense.tmall.com/" target="_blank">本色天猫</a></li>
+            <li><a href="http://acolor.en.alibaba.com/" target="_blank">阿里巴巴</a></li>
+          </ul>
+        </li>
+        <li class="bg-black swing-hover navbar-right hidden-s"><a href="#" class="bg-green"><span class="icon-edit"></span> 反馈</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--内容-->
+<div class="main">
+  <div class="bg doc-intro border-top border-bottom">
+    <div class="container">
+      <h1 class="fadein-top">企业相册</h1>
+      <p class="fadein-bottom">
+      <ul class="bread">
+        <li><a href="#" class="icon-home"> 首页</a></li>
+        <li><a href="#">关于本色</a></li>
+        <li><a href="#">企业相册</a></li>
+      </ul>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="line-big">
+      <div class="main-wrap">
+        <div class="xl12 xs12 xm12 xb12">
+          <div class="doc-content no-padding">
+            <div class="imglist line-big clearfix" id="imglist">
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"> <h3><a href="img-details.html"> 企业相册</a></h3>
+                    <p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"><h3><a href="img-details.html"> 企业相册</a></h3><p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p> </div>
+                </div>
+              </div>
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"><h3><a href="img-details.html"> 企业相册</a></h3><p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p> </div>
+                </div>
+              </div>
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"><h3><a href="img-details.html"> 企业相册</a></h3><p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p> </div>
+                </div>
+              </div>
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"><h3><a href="img-details.html"> 企业相册</a></h3><p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p> </div>
+                </div>
+              </div>
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"><h3><a href="img-details.html"> 企业相册</a></h3><p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p> </div>
+                </div>
+              </div>
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"><h3><a href="img-details.html"> 企业相册</a></h3><p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p> </div>
+                </div>
+              </div>
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"><h3><a href="img-details.html"> 企业相册</a></h3><p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p> </div>
+                </div>
+              </div>
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"><h3><a href="img-details.html"> 企业相册</a></h3><p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p> </div>
+                </div>
+              </div>
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"><h3><a href="img-details.html"> 企业相册</a></h3><p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p> </div>
+                </div>
+              </div>
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"><h3><a href="img-details.html"> 企业相册</a></h3><p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p> </div>
+                </div>
+              </div>
+              <div class="item xl12 xs6 xm4 xb4 no-padding">
+                <div class="media clearfix"> <a href="img-details.html"><img src="images/gallery/1.jpg" class="radius padding-small img-responsive" alt="..."></a>
+                  <div class="media-body padding-small"><h3><a href="img-details.html"> 企业相册</a></h3><p class="post-meta"> <span class="text-gray"><span class="icon-eye"></span> 141 &nbsp;</span> <span class="text-gray"><span class="icon-clock-o"></span> 2014-05-06</span> </p> </div>
+                </div>
+              </div>
+            </div>
+            <div class="pager-nav">
+              <ul class="pagination pagination-group border-main">
+                <li class="disabled"><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--底部-->
+<div class="footer">
+  <div class="layout padding-big-top padding-bottom border-top bg">
+    <div class="container padding">
+      <div class="line">
+        <div class="hidden-l xs9 table-responsive">
+          <ul class="nav nav-sitemap">
+            <li><a href="#">深圳市本色办公耗材有限公司</a>
+              <p> 深圳市本色办公耗材有限公司是一家充满激情、勇于求索、稳步发展，<br/>
+                集打印机耗材研发、生产、销售为一体的高新技术产业公司。<br/>
+                拥有数十名行业经验在7、8年以上的高素质、高水准的工程师与生产技师，<br/>
+                以及拥有一支经验丰富的营销团队。</p>
+              <div class="media media-x">
+                <div class="float-left txt-border radius-circle border-main">
+                  <div class="txt radius-circle bg-main icon-phone text-large"></div>
+                </div>
+                <div class="media-body"><strong class="text-big text-main">0755-25877433</strong>7*24小时客服电话</div>
+              </div>
+            </li>
+            <li class="hidden-l hidden-s"><a href="#">新闻资讯</a>
+              <ul>
+                <li><a href="#"><span class="icon-angle-right"></span> 大事件</a></li>
+                <li><a href="#"><span class="icon-angle-right"></span> 产品资讯</a></li>
+                <li><a href="#"><span class="icon-angle-right"></span> 公司动态</a></li>
+                <li><a href="#"><span class="icon-angle-right"></span> 业界资讯</a></li>
+              </ul>
+            </li>
+            <li class="hidden-l hidden-s"><a href="#">技术支持</a>
+              <ul>
+                <li><a href="#"><span class="icon-angle-right"></span> 解决方案</a></li>
+                <li><a href="#"><span class="icon-angle-right"></span> 常见问题</a></li>
+                <li><a href="#"><span class="icon-angle-right"></span> 资料下载</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="xl12 xs3 padding-top text-center">
+          <div class="weixin text-center"> <img src="images/qrcode_weixin.jpg" width="130">
+            <p class="text-gray text-small">关注“本色办公耗材”</p>
+          </div>
+          <ul class="list-unstyle list-inline">
+            <li> <a href="http://t.qq.com/astatoner" target="_blank" title="关注新浪微博">
+              <div class="txt txt-small radius-circle bg-red icon-weibo"></div>
+              </a> </li>
+            <li> <a href="http://t.qq.com/astatoner" target="_blank" title="关注腾讯微博">
+              <div class="txt txt-small radius-circle bg-blue icon-tencent-weibo"></div>
+              </a> </li>
+            <li> <a href="mailto:donna@acolor.hk" target="_blank" title="企业邮箱:donna@acolor.hk">
+              <div class="txt txt-small radius-circle bg-main icon-envelope"></div>
+              </a> </li>
+            <li> <a href="callto:donna_acolor" target="_blank" title="Skype:donna_acolor">
+              <div class="txt txt-small radius-circle bg-yellow icon-skype"></div>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="layout bg-black bg-inverse">
+    <div class="container">
+      <div class="navbar line-big">
+        <div class="navbar-text navbar-left">版权所有 &copy; <a href="index.html">深圳市本色办公耗材有限公司</a> All Rights Reserved</div>
+        <div class="navbar-body nav-navicon" id="navbar-footer">
+          <ul class="nav nav-inline navbar-right hidden-s hidden-l">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于本色</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">站点地图</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="button win-backtop bg-main fadein-bottom" id="backto-top"><span class="icon-angle-double-up text-big"></span></button>
+<!--/footer--> 
+<script src="pintuer.js"></script> 
+<script src="app.js"></script>
+</body>
+</html>
