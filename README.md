@@ -14,6 +14,14 @@ Sidebar：https://cofess.github.com/static-site/astatoner.com/sidebar/
 
 Pagetoggle：https://cofess.github.com/static-site/astatoner.com/pagetoggle/
 
+Coming Soon Style1：https://cofess.github.com/static-site/astatoner.com/coming-soon/index1.html
+
+Coming Soon Style2：https://cofess.github.com/static-site/astatoner.com/coming-soon/index2.html
+
+Coming Soon Style3：https://cofess.github.com/static-site/astatoner.com/coming-soon/index3.html
+
+Coming Soon Style4：https://cofess.github.com/static-site/astatoner.com/coming-soon/index4.html
+
 
 ### 本色办公耗材
 官网：https://cofess.github.com/static-site/acolor.hk/
