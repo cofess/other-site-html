@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CountDown</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link href="assets/css/font-awesome/font-awesome.min.css" rel="stylesheet">
+<link href='assets/css/index.css' rel='stylesheet' type='text/css'>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid bg-black parallax">
+  <div class="row text-center">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="logo"> <img src="assets/images/asta-logo.png" alt=""/> </div>
+      <h1 class="subject">We’re Comming Soon</h1>
+      <p class="content"> We will be back soon, PROMISE. We are currently doing some mentenance work on our website. Please leave your e-mail address below and we will notify you when we’re live. Also feel free to follow us on twitter and facebook. We love making new friends </p>
+    </div>
+  </div>
+  <div class="row"> 
+    <!-- ******* CountDown timer / Sidebar ***************************** -->
+    <div class="col-sm-12 counter"  style="overflow: auto">
+      <ul class="text-center countdown-timer list-inline" data-countdown="2016/01/01">
+      </ul>
+    </div>
+    <!-- ****** END CountDown timer / Sidebar **************** --> 
+  </div>
+  <div class="fullwidth abs-bottom">
+  <div class="example-container" id="example-line-container" style="width:70%" data-toggle="tooltip" data-placement="top" title="70%"></div>
+</div>
+</div>
+<div class="container-fluid">
+  <div class="row"> 
+    <!-- ******* Navigation ***************************** -->
+    <div class="col-sm-12"> 
+      
+      <!-- ***** HOME PAGE ***********************************************     -->
+      <div id="home-page" class="page">
+        <div class="row top-buffer">
+          <div class="col-md-4 col-md-offset-4 col-xs-12">
+            <form action="">
+              <div class="input-group input-group-lg newsletter-form"> <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control" placeholder="e-mail address..." required>
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="fa fa-check"></i></button>
+                </span> </div>
+            </form>
+          </div>
+        </div>
+        <div class="row top-buffer">
+          <div class="col-md-12 text-center">
+            <button class="btn btn-social btn-facebook"><i class="fa fa-facebook"></i></button>
+            <button class="btn btn-social btn-twitter"><i class="fa fa-twitter"></i></button>
+            <button class="btn btn-social btn-youtube"><i class="fa fa-youtube"></i></button>
+            <button class="btn btn-social btn-google-plus"><i class="fa fa-google-plus"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- ****** END HOME PAGE **************** --> 
+    </div>
+  </div>
+</div>
+<p class="copyright text-center top-buffer">© 2009 - 2015 Shenzhen ASTA Official Consumable Co.,Ltd. All rights reserved.</p>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="assets/js/jquery/1.11.0/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="assets/js/bootstrap/3.1.1/bootstrap.min.js"></script> 
+<!-- <script src="http://www.backslash.gr/demos/contenthover-jquery-plugin/jquery.contenthover.min.js"></script> --> 
+<script src="assets/js/jquery.countdown.min.js"></script> 
+<script src="assets/js/index.js"></script> 
+<script src="assets/js/progressbar/progressbar.min.js"></script> 
+<script>
+var line = new ProgressBar.Line('#example-line-container', {
+    color: '#ea5404',
+	strokeWidth: 0.5,
+
+});
+line.animate(1.0);  // Number from 0.0 to 1.0
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip().show()
+})
+</script>
+</body>
+</html>
